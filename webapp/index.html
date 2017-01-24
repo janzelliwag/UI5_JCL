@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>WebApp1_JCL</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"sap.ui.bootcampWebApp1_JCL": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+        sap.ui.getCore().attachInit(function(){
+/*              new sap.m.VBox({
+                 items : [
+                     new sap.m.Text({
+                         text : "User Name"
+                     }),
+                     new sap.m.Input({}), 
+                     new sap.m.Text({
+                     text : "Password"
+                                 }),
+                     new sap.m.Input({}),
+                     new sap.m.Button({
+                     	text : "Login"
+                     })
+                 ]
+              }).placeAt("content");*/
+              
+              sap.ui.xmlview({
+              	viewName: "sap.ui.bootcampWebApp1_JCL.view.myView_app1"
+              }).placeAt(content);
+        })
+
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+
+
+  <!--<div class="container">-->
+<!--    <label><b>Username</b></label>
+    <br><input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <br><input type="password" placeholder="Enter Password" name="psw" required>
+-->
+  <!--</div>-->
+
+
+		
+	</body>
+
+</html>
